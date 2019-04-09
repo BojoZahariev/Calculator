@@ -99,9 +99,9 @@ body {
     background-size: cover;
     outline: none;
     z-index: 2;
-    -moz-box-shadow: 0px 0px 25px #70a1ff;
-    -webkit-box-shadow: 0px 0px 25px #70a1ff;
-    background-color: #323232;
+    box-shadow: 0px 0px 15px #70a1ff;
+    -moz-box-shadow: 0px 0px 15px #70a1ff;
+    -webkit-box-shadow: 0px 0px 15px #70a1ff;
   }
   
   button:active {
