@@ -5,18 +5,15 @@ html {
 }
 
 .flex-container {
-  height: 100vh; 
-  display: flex; 
-  align-items: center; 
-  justify-content: center;
+  display: flex;
 }
 
 
 #display {
   background-image: radial-gradient(#b8e994, #079992);
   text-align: center;
-  width: 320px;
-  height: 200px;
+  width: 310px;
+  height: 240px;
   overflow: hidden;
   margin: auto;
   border-radius: 50%;
@@ -27,9 +24,9 @@ html {
 }
 
 #dis {
-  padding-top: 35px;
+  padding-top: 55px;
   font-size: 40px;
-  filter: opacity(70%) drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.9));
+  filter: opacity(60%) drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.9));
   animation: blinker 3s linear infinite;
 }
 
@@ -42,7 +39,7 @@ html {
 
 @keyframes blinker {
   50% {
-    filter: opacity(50%) drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.9));
+    filter: opacity(45%) drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.9));
   }
   
 }
@@ -50,12 +47,11 @@ html {
 #bigContainer {
   background-color: #353b48;
   background-image: url("https://preview.ibb.co/hsPGr9/dark_wod.jpg");
-  border-radius: 10%;
-  width: 345px;
+  border-radius: 10px;
+  width: 320px;
   margin: auto;
   padding-bottom: 20px;
   padding-top: 10px;
-  border-radius: 10px;
 }
 
 #smallContainer {
@@ -66,6 +62,7 @@ html {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  margin-right: 10px;
 }
 
 #container2 {
@@ -74,18 +71,21 @@ html {
   flex-direction: row;
 }
 
-.light {
-  width: 70px;
-  height: 100px;
+#container2 div {
+  width: 60px;
   z-index: 1;
+}
+
+.light {
+  width: 60px;
+  height: 100px;
+  filter: grayscale(100%);
 }
 
 .but2 {
   margin-top: -2px;
   cursor: pointer;
   font-family: 'Averia Libre', cursive;
-  margin-left: 15px;
-  margin-right: 15px;
   background-image: url("https://i.ibb.co/8bShcHP/generic-button-1357006-640.png");
   width: 40px;
   height: 40px;
@@ -118,91 +118,74 @@ button:active {
 
 #but1L {
   background-image: url("https://i.ibb.co/92mHR0D/nixie1.png");
-  filter: grayscale(100%);
 }
 
 #but2L {
   background-image: url("https://i.ibb.co/tKSFDjY/nixie2.png");
-  filter: grayscale(100%);
 }
 
 #but3L {
   background-image: url("https://i.ibb.co/cgtt85R/nixie3.png");
-  filter: grayscale(100%);
 }
 
 #but4L {
   background-image: url("https://i.ibb.co/y5hYLkc/nixie4.png");
-  filter: grayscale(100%);
 }
 
 #but5L {
   background-image: url("https://i.ibb.co/NFTNpNk/nixie5.png");
-  filter: grayscale(100%);
 }
 
 #but6L {
   background-image: url("https://i.ibb.co/nQdwvYq/nixie6.png");
-  filter: grayscale(100%);
 }
 
 #but7L {
   background-image: url("https://i.ibb.co/56CNkyL/nixie7.png");
-  filter: grayscale(100%);
 }
 
 #but8L {
   background-image: url("https://i.ibb.co/LpD1TzC/nixie8.png");
-  filter: grayscale(100%);
 }
 
 #but9L {
   background-image: url("https://i.ibb.co/xDP5ZhR/nixie9.png");
-  filter: grayscale(100%);
 }
 
 #but0L {
   background-image: url("https://i.ibb.co/1dts3jd/nixie0.png");
-  filter: grayscale(100%);
 }
 
 #butAL {
   background-image: url("https://i.ibb.co/N6LPHwY/nixie-plus.png");
-  filter: grayscale(100%);
 }
 
 #butMuL {
   background-image: url("https://i.ibb.co/ZG4z2R1/nixie-multyply.png");
-  filter: grayscale(100%);
  
 }
 
 #butSL {
   background-image: url("https://i.ibb.co/VmfQXLB/nixie-minus.png");
-  filter: grayscale(100%);
 }
 
 #butCL {
   background-image: url("https://i.ibb.co/5jvqWTF/nixie-EBDel.png");
-  filter: grayscale(100%);
 }
 
 #butBkL {
   background-image: url("https://i.ibb.co/5jvqWTF/nixie-EBDel.png");
-  filter: grayscale(100%);
 }
 
 #butEL {
   background-image: url("https://i.ibb.co/5jvqWTF/nixie-EBDel.png");
-  filter: grayscale(100%);
 }
 
 #butDivL {
   background-image: url("https://i.ibb.co/dW5yRkR/div.png");
-  filter: grayscale(100%);
 }
 
 #butDecL {
   background-image: url("https://i.ibb.co/D1X2jMr/dec.png");
-  filter: grayscale(100%);
 }
+
