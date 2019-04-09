@@ -1,191 +1,193 @@
 html {
-  background-color: #000;
-  font-family: 'Averia Libre', cursive;
-  text-align: center;
-}
-
-.flex-container {
-  display: flex;
-}
-
-
-#display {
-  background-image: radial-gradient(#b8e994, #079992);
-  text-align: center;
-  width: 310px;
-  height: 240px;
-  overflow: hidden;
-  margin: auto;
-  border-radius: 50%;
-  border: 2px solid #b8bcc8;
-  filter: grayscale(45%);
-  -moz-box-shadow: 0px 0px 75px #079992;
-  -webkit-box-shadow: 0px 0px 75px #079992;
-}
-
-#dis {
-  padding-top: 55px;
-  font-size: 40px;
-  filter: opacity(60%) drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.9));
-  animation: blinker 3s linear infinite;
-}
-
-#list {
-  margin-top: -10px;
-  font-size: 15px;
-  filter: opacity(70%) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.9));
-  animation: blinker 3s linear infinite;
-}
-
-@keyframes blinker {
-  50% {
-    filter: opacity(45%) drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.9));
+    background-color: #000;
+    font-family: 'Averia Libre', cursive;
+    text-align: center;
   }
   
-}
-
-#bigContainer {
-  background-color: #353b48;
-  background-image: url("https://preview.ibb.co/hsPGr9/dark_wod.jpg");
-  border-radius: 10px;
-  width: 320px;
-  margin: auto;
-  padding-bottom: 20px;
-  padding-top: 10px;
-}
-
-#smallContainer {
-  margin-top: 10px;
-}
-
-#container1 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  margin-right: 10px;
-}
-
-#container2 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-#container2 div {
-  width: 60px;
-  z-index: 1;
-}
-
-.light {
-  width: 60px;
-  height: 100px;
-  filter: grayscale(100%);
-}
-
-.but2 {
-  margin-top: -2px;
-  cursor: pointer;
-  font-family: 'Averia Libre', cursive;
-  background-image: url("https://i.ibb.co/8bShcHP/generic-button-1357006-640.png");
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  outline: none;
-  z-index: 2;
-  -moz-box-shadow: 0px 0px 25px #70a1ff;
-  -webkit-box-shadow: 0px 0px 25px #70a1ff;
-}
-
-button:active {
-  background-color: #576574;
-  box-shadow: 0 1px #666;
-  transform: translateY(1px);
-}
-
-.btntext {
-  filter: opacity(70%)
-}
-
-#btnMu,
-#btnDec,
-#btnE {
-  font-size: 20px;
-}
-
-
-#but1L {
-  background-image: url("https://i.ibb.co/92mHR0D/nixie1.png");
-}
-
-#but2L {
-  background-image: url("https://i.ibb.co/tKSFDjY/nixie2.png");
-}
-
-#but3L {
-  background-image: url("https://i.ibb.co/cgtt85R/nixie3.png");
-}
-
-#but4L {
-  background-image: url("https://i.ibb.co/y5hYLkc/nixie4.png");
-}
-
-#but5L {
-  background-image: url("https://i.ibb.co/NFTNpNk/nixie5.png");
-}
-
-#but6L {
-  background-image: url("https://i.ibb.co/nQdwvYq/nixie6.png");
-}
-
-#but7L {
-  background-image: url("https://i.ibb.co/56CNkyL/nixie7.png");
-}
-
-#but8L {
-  background-image: url("https://i.ibb.co/LpD1TzC/nixie8.png");
-}
-
-#but9L {
-  background-image: url("https://i.ibb.co/xDP5ZhR/nixie9.png");
-}
-
-#but0L {
-  background-image: url("https://i.ibb.co/1dts3jd/nixie0.png");
-}
-
-#butAL {
-  background-image: url("https://i.ibb.co/N6LPHwY/nixie-plus.png");
-}
-
-#butMuL {
-  background-image: url("https://i.ibb.co/ZG4z2R1/nixie-multyply.png");
- 
-}
-
-#butSL {
-  background-image: url("https://i.ibb.co/VmfQXLB/nixie-minus.png");
-}
-
-#butCL {
-  background-image: url("https://i.ibb.co/5jvqWTF/nixie-EBDel.png");
-}
-
-#butBkL {
-  background-image: url("https://i.ibb.co/5jvqWTF/nixie-EBDel.png");
-}
-
-#butEL {
-  background-image: url("https://i.ibb.co/5jvqWTF/nixie-EBDel.png");
-}
-
-#butDivL {
-  background-image: url("https://i.ibb.co/dW5yRkR/div.png");
-}
-
-#butDecL {
-  background-image: url("https://i.ibb.co/D1X2jMr/dec.png");
-}
-
+  .flex-container {
+    display: flex;
+  }
+  
+  
+  #display {
+    background-image: radial-gradient(#b8e994, #079992);
+    text-align: center;
+    width: 310px;
+    height: 240px;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 50%;
+    border: 2px solid #b8bcc8;
+    filter: grayscale(45%);
+    -moz-box-shadow: 0px 0px 75px #079992;
+    -webkit-box-shadow: 0px 0px 75px #079992;
+  }
+  
+  #dis {
+    padding-top: 55px;
+    font-size: 40px;
+    filter: opacity(60%) drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.9));
+    animation: blinker 3s linear infinite;
+  }
+  
+  #list {
+    margin-top: -10px;
+    font-size: 15px;
+    filter: opacity(70%) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.9));
+    animation: blinker 3s linear infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      filter: opacity(45%) drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.9));
+    }
+    
+  }
+  
+  #bigContainer {
+    background-color: #353b48;
+    background-image: url("https://preview.ibb.co/hsPGr9/dark_wod.jpg");
+    border-radius: 10px;
+    width: 320px;
+    margin: auto;
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+  
+  #smallContainer {
+    margin-top: 10px;
+  }
+  
+  #container1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-right: 10px;
+  }
+  
+  #container2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+  #container2 div {
+    width: 60px;
+    z-index: 1;
+  }
+  
+  .light {
+    width: 60px;
+    height: 100px;
+    filter: grayscale(100%);
+  }
+  
+  .but2 {
+    margin-top: -2px;
+    cursor: pointer;
+    font-family: 'Averia Libre', cursive;
+    background-image: url(images/button40.png);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: none;
+    z-index: 2;
+    -moz-box-shadow: 0px 0px 25px #70a1ff;
+    -webkit-box-shadow: 0px 0px 25px #70a1ff;
+    background-color: #323232;
+  }
+  
+  button:active {
+    background-color: #576574;
+    box-shadow: 0 1px #666;
+    transform: translateY(1px);
+  }
+  
+  .btntext {
+    filter: opacity(70%)
+  }
+  
+  #btnMu,
+  #btnDec,
+  #btnE {
+    font-size: 20px;
+  }
+  
+  
+  #but1L {
+    background-image: url(images/nixie1.png);
+  }
+  
+  #but2L {
+    background-image: url(images/nixie2.png);
+  }
+  
+  #but3L {
+    background-image: url(images/nixie3.png);
+  }
+  
+  #but4L {
+    background-image: url(images/nixie4.png);
+  }
+  
+  #but5L {
+    background-image: url(images/nixie5.png);
+  }
+  
+  #but6L {
+    background-image: url(images/nixie6.png);
+  }
+  
+  #but7L {
+    background-image: url(images/nixie7.png);
+  }
+  
+  #but8L {
+    background-image: url(images/nixie8.png);
+  }
+  
+  #but9L {
+    background-image: url(images/nixie9.png);
+  }
+  
+  #but0L {
+    background-image: url(images/nixie0.png);
+  }
+  
+  #butAL {
+    background-image: url(images/nixie-plus.png);
+  }
+  
+  #butMuL {
+    background-image: url(images/nixie-multyply.png);
+   
+  }
+  
+  #butSL {
+    background-image: url(images/nixie-minus.png);
+  }
+  
+  #butCL {
+    background-image: url(images/nixieEBDel.png);
+  }
+  
+  #butBkL {
+    background-image: url(images/nixieEBDel.png);
+  }
+  
+  #butEL {
+    background-image: url(images/nixieEBDel.png);
+  }
+  
+  #butDivL {
+    background-image: url(images/div.png);
+  }
+  
+  #butDecL {
+    background-image: url(images/dec.png);
+  }
+  
+  
