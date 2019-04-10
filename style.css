@@ -7,6 +7,9 @@ body {
   
   .flex-container {
     display: flex;
+    height: 100vh;
+    align-items: center; 
+    justify-content: center;
   }
   
   
@@ -20,6 +23,7 @@ body {
     border-radius: 50%;
     border: 2px solid #b8bcc8;
     filter: grayscale(45%);
+    box-shadow: 0px 0px 75px #079992;
     -moz-box-shadow: 0px 0px 75px #079992;
     -webkit-box-shadow: 0px 0px 75px #079992;
   }
