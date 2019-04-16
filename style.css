@@ -1,198 +1,219 @@
 html,
 body {
-    background-color: #000;
-    font-family: 'Averia Libre', cursive;
-    text-align: center;
+  background-color: #000;
+  font-family: 'Averia Libre', cursive;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.display {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: -10px auto;
+  border-radius: 50%;
+  padding: 0px;
+  background-image: url(images/shape-2885023_1280.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*ads glow to the display*/
+.glow {
+  position: absolute;
+  width: 288px;
+  height: 288px;
+  border-radius: 50%;
+  top: 16px;
+  left: 16px;
+  box-shadow: 0px 0px 75px #079992;
+}
+
+.inner {
+  text-align: center;
+  line-height: 10px;
+  position: absolute;
+  width: 208px;
+  height: 208px;
+  top: 56px;
+  left: 56px;
+  border-radius: 50%;
+  background-image: radial-gradient(#b8e994, #079992);
+  overflow: hidden;
+  filter: grayscale(45%);
+}
+
+#dis {
+  padding-top: 55px;
+  font-size: 40px;
+  filter: opacity(60%) drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.9));
+  animation: blinker 3s linear infinite;
+}
+
+#list {
+  margin-top: -10px;
+  font-size: 15px;
+  filter: opacity(70%) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.9));
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    filter: opacity(45%) drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.9));
   }
-  
-  .flex-container {
-    display: flex;
-    height: 100vh;
-    align-items: center; 
-    justify-content: center;
-  }
-  
-  
-  #display {
-    background-image: radial-gradient(#b8e994, #079992);
-    text-align: center;
-    width: 310px;
-    height: 240px;
-    overflow: hidden;
-    margin: auto;
-    border-radius: 50%;
-    border: 2px solid #b8bcc8;
-    filter: grayscale(45%);
-    box-shadow: 0px 0px 75px #079992;
-    -moz-box-shadow: 0px 0px 75px #079992;
-    -webkit-box-shadow: 0px 0px 75px #079992;
-  }
-  
-  #dis {
-    padding-top: 55px;
-    font-size: 40px;
-    filter: opacity(60%) drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.9));
-    animation: blinker 3s linear infinite;
-  }
-  
-  #list {
-    margin-top: -10px;
-    font-size: 15px;
-    filter: opacity(70%) drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.9));
-    animation: blinker 3s linear infinite;
-  }
-  
-  @keyframes blinker {
-    50% {
-      filter: opacity(45%) drop-shadow(6px 6px 5px rgba(0, 0, 0, 0.9));
-    }
-    
-  }
-  
-  #bigContainer {
-    background-color: #353b48;
-    background-image: url(images/wood.jpg);
-    border-radius: 10px;
-    width: 320px;
-    margin: auto;
-    padding-bottom: 20px;
-    padding-top: 10px;
-  }
-  
-  #smallContainer {
-    margin-top: 10px;
-  }
-  
-  #container1 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    margin-right: 10px;
-  }
-  
-  #container2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-  }
-  
-  #container2 div {
-    width: 60px;
-    z-index: 1;
-  }
-  
-  .light {
-    width: 60px;
-    height: 100px;
-    filter: grayscale(100%);
-  }
-  
-  .but2 {
-    margin-top: -2px;
-    cursor: pointer;
-    font-family: 'Averia Libre', cursive;
-    background-image: url(images/button40.png);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    outline: none;
-    z-index: 2;
-    -moz-box-shadow: 0px 0px 15px #70a1ff;
-    -webkit-box-shadow: 0px 0px 15px #70a1ff;
-    background-color: #323232;
-  }
-  
-  button:active {
-    background-color: #576574;
-    box-shadow: 0 1px #666;
-    transform: translateY(1px);
-  }
-  
-  .btntext {
-    filter: opacity(70%)
-  }
-  
-  #btnMu,
-  #btnDec,
-  #btnE {
-    font-size: 20px;
-  }
-  
-  
-  #but1L {
-    background-image: url(images/nixie1.png);
-  }
-  
-  #but2L {
-    background-image: url(images/nixie2.png);
-  }
-  
-  #but3L {
-    background-image: url(images/nixie3.png);
-  }
-  
-  #but4L {
-    background-image: url(images/nixie4.png);
-  }
-  
-  #but5L {
-    background-image: url(images/nixie5.png);
-  }
-  
-  #but6L {
-    background-image: url(images/nixie6.png);
-  }
-  
-  #but7L {
-    background-image: url(images/nixie7.png);
-  }
-  
-  #but8L {
-    background-image: url(images/nixie8.png);
-  }
-  
-  #but9L {
-    background-image: url(images/nixie9.png);
-  }
-  
-  #but0L {
-    background-image: url(images/nixie0.png);
-  }
-  
-  #butAL {
-    background-image: url(images/nixie-plus.png);
-  }
-  
-  #butMuL {
-    background-image: url(images/nixie-multyply.png);
-   
-  }
-  
-  #butSL {
-    background-image: url(images/nixie-minus.png);
-  }
-  
-  #butCL {
-    background-image: url(images/nixieEBDel.png);
-  }
-  
-  #butBkL {
-    background-image: url(images/nixieEBDel.png);
-  }
-  
-  #butEL {
-    background-image: url(images/nixieEBDel.png);
-  }
-  
-  #butDivL {
-    background-image: url(images/div.png);
-  }
-  
-  #butDecL {
-    background-image: url(images/dec.png);
-  }
-  
-  
+}
+
+#bigContainer {
+  background-color: #353b48;
+  background-image: url(images/wood.jpg);
+  border-radius: 10px;
+  width: 320px;
+  margin: auto;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+#smallContainer {
+  margin-top: 10px;
+}
+
+#container1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-right: 10px;
+}
+
+#container2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#container2 div {
+  width: 60px;
+  z-index: 1;
+}
+
+/*nixies*/
+.light {
+  width: 60px;
+  height: 100px;
+  filter: grayscale(100%);
+}
+
+/*buttons*/
+.but2 {
+  margin-top: -2px;
+  cursor: pointer;
+  font-family: 'Averia Libre', cursive;
+  background-image: url(images/button40.png);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  outline: none;
+  z-index: 2;
+  -moz-box-shadow: 0px 0px 15px #70a1ff;
+  -webkit-box-shadow: 0px 0px 15px #70a1ff;
+  background-color: #323232;
+}
+
+button:active {
+  background-color: #576574;
+  box-shadow: 0 1px #666;
+  transform: translateY(1px);
+}
+
+.btntext {
+  filter: opacity(70%);
+}
+
+#btnMu,
+#btnDec,
+#btnE {
+  font-size: 20px;
+}
+
+/*nixies*/
+
+#but1L {
+  background-image: url(images/nixie1.png);
+}
+
+#but2L {
+  background-image: url(images/nixie2.png);
+}
+
+#but3L {
+  background-image: url(images/nixie3.png);
+}
+
+#but4L {
+  background-image: url(images/nixie4.png);
+}
+
+#but5L {
+  background-image: url(images/nixie5.png);
+}
+
+#but6L {
+  background-image: url(images/nixie6.png);
+}
+
+#but7L {
+  background-image: url(images/nixie7.png);
+}
+
+#but8L {
+  background-image: url(images/nixie8.png);
+}
+
+#but9L {
+  background-image: url(images/nixie9.png);
+}
+
+#but0L {
+  background-image: url(images/nixie0.png);
+}
+
+#butAL {
+  background-image: url(images/nixie-plus.png);
+}
+
+#butMuL {
+  background-image: url(images/nixie-multyply.png);
+}
+
+#butSL {
+  background-image: url(images/nixie-minus.png);
+}
+
+#butCL {
+  background-image: url(images/nixieEBDel.png);
+}
+
+#butBkL {
+  background-image: url(images/nixieEBDel.png);
+}
+
+#butEL {
+  background-image: url(images/nixieEBDel.png);
+}
+
+#butDivL {
+  background-image: url(images/div.png);
+}
+
+#butDecL {
+  background-image: url(images/dec.png);
+}
