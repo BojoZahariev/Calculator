@@ -1,1 +1,1 @@
-A Calculator project part of The Odin project curiculum, made with vanilla JS, CSS andd HTML.
+A Calculator made with vanilla JS, CSS andd HTML (My early days of JS).
