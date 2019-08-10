@@ -1,123 +1,125 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Averia+Libre|Bungee+Hairline|Iceland|Quantico|Share+Tech+Mono" rel="stylesheet" />
-  </head>
 
-  <body>
-    <div class="flex-container">
-      <div id="bigContainer">
-        <div class="display">
-          <div class="glow"></div>
-          <div class="inner">
-            <p id="dis"></p>
-            <p id="list"></p>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Averia+Libre|Bungee+Hairline|Iceland|Quantico|Share+Tech+Mono" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="flex-container">
+    <div id="bigContainer">
+      <div class="display">
+        <div class="glow"></div>
+        <div class="inner">
+          <p id="dis"></p>
+          <p id="list"></p>
+        </div>
+      </div>
+
+      <div id="smallContainer">
+        <div id="container1">
+          <div class="light" id="but1L"></div>
+          <div class="light" id="but2L"></div>
+          <div class="light" id="but3L"></div>
+          <div class="light" id="but4L"></div>
+          <div class="light" id="but5L"></div>
+        </div>
+
+        <div id="container2">
+          <div>
+            <button class="but2" id="btn1" onclick="clickNumber(1)"><span class="btntext">1</span></button>
+          </div>
+          <div>
+            <button class="but2" id="btn2" onclick="clickNumber(2)"><span class="btntext">2</span></button>
+          </div>
+          <div>
+            <button class="but2" id="btn3" onclick="clickNumber(3)"><span class="btntext">3</span></button>
+          </div>
+          <div>
+            <button class="but2" id="btn4" onclick="clickNumber(4)"><span class="btntext">4</span></button>
+          </div>
+          <div>
+            <button class="but2" id="btn5" onclick="clickNumber(5)"><span class="btntext">5</span></button>
           </div>
         </div>
 
-        <div id="smallContainer">
-          <div id="container1">
-            <div class="light" id="but1L"></div>
-            <div class="light" id="but2L"></div>
-            <div class="light" id="but3L"></div>
-            <div class="light" id="but4L"></div>
-            <div class="light" id="but5L"></div>
-          </div>
+        <div id="container1">
+          <div class="light" id="but6L"></div>
+          <div class="light" id="but7L"></div>
+          <div class="light" id="but8L"></div>
+          <div class="light" id="but9L"></div>
+          <div class="light" id="but0L"></div>
+        </div>
 
-          <div id="container2">
-            <div>
-              <button class="but2" id="btn1"><span class="btntext">1</span></button>
-            </div>
-            <div>
-              <button class="but2" id="btn2"><span class="btntext">2</span></button>
-            </div>
-            <div>
-              <button class="but2" id="btn3"><span class="btntext">3</span></button>
-            </div>
-            <div>
-              <button class="but2" id="btn4"><span class="btntext">4</span></button>
-            </div>
-            <div>
-              <button class="but2" id="btn5"><span class="btntext">5</span></button>
-            </div>
+        <div id="container2">
+          <div>
+            <button class="but2" id="btn6" onclick="clickNumber(6)"><span class="btntext">6</span></button>
           </div>
-
-          <div id="container1">
-            <div class="light" id="but6L"></div>
-            <div class="light" id="but7L"></div>
-            <div class="light" id="but8L"></div>
-            <div class="light" id="but9L"></div>
-            <div class="light" id="but0L"></div>
+          <div>
+            <button class="but2" id="btn7" onclick="clickNumber(7)"><span class="btntext">7</span></button>
           </div>
-
-          <div id="container2">
-            <div>
-              <button class="but2" id="btn6"><span class="btntext">6</span></button>
-            </div>
-            <div>
-              <button class="but2" id="btn7"><span class="btntext">7</span></button>
-            </div>
-            <div>
-              <button class="but2" id="btn8"><span class="btntext">8</span></button>
-            </div>
-            <div>
-              <button class="but2" id="btn9"><span class="btntext">9</span></button>
-            </div>
-            <div>
-              <button class="but2" id="btn0"><span class="btntext">0</span></button>
-            </div>
+          <div>
+            <button class="but2" id="btn8" onclick="clickNumber(8)"><span class="btntext">8</span></button>
           </div>
-
-          <div id="container1">
-            <div class="light" id="butCL"></div>
-            <div class="light" id="butAL"></div>
-            <div class="light" id="butSL"></div>
-            <div class="light" id="butBkL"></div>
+          <div>
+            <button class="but2" id="btn9" onclick="clickNumber(9)"><span class="btntext">9</span></button>
           </div>
-
-          <div id="container2">
-            <div>
-              <button class="but2" id="btnC"><span class="btntext">CE</span></button>
-            </div>
-            <div>
-              <button class="but2" id="btnA"><span class="btntext">+</span></button>
-            </div>
-            <div>
-              <button class="but2" id="btnS"><span class="btntext">-</span></button>
-            </div>
-            <div>
-              <button class="but2" id="btnBk"><span class="btntext">Del</span></button>
-            </div>
+          <div>
+            <button class="but2" id="btn0"><span class="btntext">0</span></button>
           </div>
+        </div>
 
-          <div id="container1">
-            <div class="light" id="butMuL"></div>
-            <div class="light" id="butDivL"></div>
-            <div class="light" id="butDecL"></div>
-            <div class="light" id="butEL"></div>
+        <div id="container1">
+          <div class="light" id="butCL"></div>
+          <div class="light" id="butAL"></div>
+          <div class="light" id="butSL"></div>
+          <div class="light" id="butBkL"></div>
+        </div>
+
+        <div id="container2">
+          <div>
+            <button class="but2" id="btnC"><span class="btntext">CE</span></button>
           </div>
+          <div>
+            <button class="but2" id="btnA"><span class="btntext">+</span></button>
+          </div>
+          <div>
+            <button class="but2" id="btnS"><span class="btntext">-</span></button>
+          </div>
+          <div>
+            <button class="but2" id="btnBk"><span class="btntext">Del</span></button>
+          </div>
+        </div>
 
-          <div id="container2">
-            <div>
-              <button class="but2" id="btnMu"><span class="btntext">*</span></button>
-            </div>
-            <div>
-              <button class="but2" id="btnDiv"><span class="btntext">/</span></button>
-            </div>
-            <div>
-              <button class="but2" id="btnDec"><span class="btntext">.</span></button>
-            </div>
-            <div>
-              <button class="but2" id="btnE"><span class="btntext">=</span></button>
-            </div>
+        <div id="container1">
+          <div class="light" id="butMuL"></div>
+          <div class="light" id="butDivL"></div>
+          <div class="light" id="butDecL"></div>
+          <div class="light" id="butEL"></div>
+        </div>
+
+        <div id="container2">
+          <div>
+            <button class="but2" id="btnMu"><span class="btntext">*</span></button>
+          </div>
+          <div>
+            <button class="but2" id="btnDiv"><span class="btntext">/</span></button>
+          </div>
+          <div>
+            <button class="but2" id="btnDec"><span class="btntext">.</span></button>
+          </div>
+          <div>
+            <button class="but2" id="btnE"><span class="btntext">=</span></button>
           </div>
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
