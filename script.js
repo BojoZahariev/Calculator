@@ -228,11 +228,13 @@ const lightEmUp = (light) => {
 
 var btn0 = document.getElementById('btn0');
 btn0.addEventListener('click', () => {
+  lightEmUp(10);
   if (op === 'div') {
     reset();
+  } else {
+
+    clickNumber(0);
   }
-  lightEmUp(10);
-  clickNumber(0);
 
 }, false);
 
